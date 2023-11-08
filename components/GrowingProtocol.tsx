@@ -1,27 +1,29 @@
 import React from 'react'
 import HeadingText from './commons/HeadingText'
 import DescriptionText from './commons/DescriptionText'
-import { suiteToolsData } from '@/utils/suiteToolsData'
+import { growingProtocolData } from '@/utils/growingProtocolData'
 import Card from './commons/Card'
 
-function TokenSales() {
+function GrowingProtocol() {
     return (
-        <section className='flex flex-col w-full h-full items-center justify-center text-center gap-y-10 py-20'>
+        <section className='w-full text-center flex items-center justify-center flex-col py-20 gap-y-10'>
             <HeadingText>
-                A Suite of Tools for Token Sales.
+                A Growing Protocol Ecosystem.
             </HeadingText>
             <DescriptionText>
-                A suite of tools were built to help you create your own tokens and launchpads in a fast, simple and cheap way, with no prior code knowledge required and 100% decentralized!
+                We build a suite of tools for the world of decentralized finance. PinkMoon, PinkSale, PinkElon PinkLock, PinkSwap, we Pink everything!
             </DescriptionText>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-7 gap-y-7'>
                 {
-                    suiteToolsData.map((data, index) => (
+                    growingProtocolData.map((data, index) => (
                         <Card key={index} imageUrl={data.imageUrl} details={data.details} title={data.title} />
                     ))
                 }
             </div>
+
+
         </section>
     )
 }
 
-export default TokenSales
+export default GrowingProtocol

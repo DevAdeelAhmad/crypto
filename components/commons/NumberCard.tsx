@@ -8,7 +8,7 @@ type NumberCard = {
 
 function NumberCard({ number, title }: NumberCard) {
     return (
-        <div className='flex flex-col gap-y-3 items-center justify-center text-center bg-green-400/50 rounded-xl text-black/80 w-[220px] h-[170px]'>
+        <div className='flex flex-col gap-y-3 items-center justify-center text-center bg-green-400/50 rounded-xl text-black/80 w-[170px] h-[110px] lg:w-[220px] lg:h-[170px]'>
             <HeadingText>{number}</HeadingText>
             <span className='text-base font-medium'>{title}</span>
         </div>

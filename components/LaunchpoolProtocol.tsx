@@ -15,11 +15,11 @@ function LaunchpoolProtocol() {
                 CryptoSale helps everyone to create their own tokens and token sales in few seconds.<br />
                 Tokens created on CryptoSale will be verified and published on explorer websites.
             </DescriptionText>
-            <div className='flex gap-x-5'>
+            <div className='flex gap-x-2 lg:gap-x-5'>
                 <ButtonRed>Join Now</ButtonRed>
                 <ButtonRed>Learn More</ButtonRed>
             </div>
-            <div className="flex flex-wrap gap-x-5">
+            <div className="flex items-center justify-center gap-y-5 flex-wrap gap-x-5">
                 {
                     numbersData.map((data, index) => (
                         <NumberCard key={index} title={data.title} number={data.number} />
