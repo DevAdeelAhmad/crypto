@@ -19,8 +19,8 @@ function Navbar() {
         setIsActive(!isActive);
     }
     return (
-        <nav className="fixed top-0 left-0 z-[100]">
-            <header className="flex w-screen justify-between items-center z-[100] p-4 border-b-[1px] !h-[10vh] bg-black border-b-[#525252d9]">
+        <nav className="fixed top-0 left-0">
+            <header className="flex w-screen justify-between items-center p-4 border-b-[1px] !h-[10vh] bg-black border-b-[#525252d9]">
                 <div className="flex gap-x-2 items-center">
                     <button onClick={handleSideIconToggle}>
                         {isSideBarActive ? <AiOutlineMenuFold size={25} color="#43ff64d9" /> : <AiOutlineMenu size={25} color="#43ff64d9" />}
@@ -66,7 +66,7 @@ function Navbar() {
                     </div>
                 )}
             </header>
-            <aside className={`sticky !top-[80px] left-0 max-h-max !h-[90vh] z-[100] overflow-y-scroll bg-black ${isSideBarActive ? '!w-[170px]' : 'w-0 md:!w-[60px]'}`}>
+            <aside className={`sticky !top-[80px] left-0 max-h-max !h-[90vh] overflow-y-scroll bg-black ${isSideBarActive ? '!w-[170px]' : 'w-0 md:!w-[60px]'}`}>
                 {isSideBarActive ? <SidebarFull /> : <Sidebar />}
             </aside>
 
