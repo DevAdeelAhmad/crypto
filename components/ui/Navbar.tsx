@@ -5,6 +5,8 @@ import { useState } from "react"
 import { AiOutlineMenuFold, AiOutlineMenu } from 'react-icons/ai'
 import { GiChart } from 'react-icons/gi'
 import { FaEthereum } from 'react-icons/fa'
+import Sidebar from "./Sidebar";
+import SidebarFull from "./SidebarFull";
 
 function Navbar() {
     const [isSideBarActive, setIsSideBarActive] = useState(false);
@@ -37,7 +39,8 @@ function Navbar() {
                     </Link>
                 </div>
             </header>
-            <aside className={`sticky !top-[80px] left-0 h-full text-white border-r-[#43ff64d9] border-r-[2px] ${isSideBarActive ? '!w-[150px]' : '!w-[50px]'}`}>
+            <aside className={`sticky !top-[80px] left-0 h-full text-white border-r-[#43ff64d9] border-r-[2px]  ${isSideBarActive ? '!w-[150px]' : '!w-[50px]'}`}>
+                {isSideBarActive ? <SidebarFull /> : <Sidebar />}
             </aside>
 
         </nav>
