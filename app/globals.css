@@ -22,6 +22,16 @@ body ::selection {
   border-radius: 15px;
 }
 
+.scrollToTop {
+  background-color: transparent;
+  background-image: white;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px transparent inset;
+  transition: 0.5s ease-in-out;
+  z-index: 1000;
+}
+
 /* Electric Blue: #373e98
 
 Hot Pink: #f16775

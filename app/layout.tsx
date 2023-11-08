@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Navbar from '@/components/ui/Navbar'
 import { Montserrat } from 'next/font/google'
+import ScrollToTop from '@/components/commons/ScrollToTop'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en" >
       <body className={montserrat.className}>
-        {/* <Navbar /> */}
+        <ScrollToTop />
         {children}
       </body>
     </ html>
