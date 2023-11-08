@@ -23,7 +23,7 @@ export const sidebarData = [
     href: "/",
   },
   {
-    title: "Lanuchpads",
+    title: "Launchpads",
     icon: HiOutlineRocketLaunch,
     href: "/launchpad",
   },

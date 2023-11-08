@@ -5,17 +5,18 @@ import { useState } from "react"
 import { AiOutlineMenuFold, AiOutlineMenu } from 'react-icons/ai'
 import { GiChart } from 'react-icons/gi'
 import { FaEthereum } from 'react-icons/fa'
-import Sidebar from "./Sidebar";
-import SidebarFull from "./SidebarFull";
+import Sidebar from "@/components/ui/Sidebar";
+import SidebarFull from "@/components/ui/SidebarFull";
 
 function Navbar() {
     const [isSideBarActive, setIsSideBarActive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
     function handleSideIconToggle() {
         setIsSideBarActive(!isSideBarActive);
     }
     return (
         <nav className="w-full sticky top-0 left-0">
-            <header className="flex justify-between items-center p-4 border-b-[2px] !h-[80px] border-b-[#43ff64d9]">
+            <header className="flex justify-between items-center p-4 border-b-[1px] !h-[10vh] bg-black/95 border-b-[#525252d9]">
                 <div className="flex gap-x-2 items-center">
                     <button className="" onClick={handleSideIconToggle}>
                         {isSideBarActive ? <AiOutlineMenuFold size={25} color="#43ff64d9" /> : <AiOutlineMenu size={25} color="#43ff64d9" />}
@@ -39,7 +40,7 @@ function Navbar() {
                     </Link>
                 </div>
             </header>
-            <aside className={`sticky !top-[80px] left-0 h-full text-white border-r-[#43ff64d9] border-r-[2px]  ${isSideBarActive ? '!w-[150px]' : '!w-[50px]'}`}>
+            <aside className={`sticky !top-[80px] left-0 max-h-max !h-[90vh] overflow-y-scroll bg-black/95  ${isSideBarActive ? '!w-[170px]' : '!w-[60px]'}`}>
                 {isSideBarActive ? <SidebarFull /> : <Sidebar />}
             </aside>
 

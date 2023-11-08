@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-black/95;
+body ::-moz-selection {
+  /* For Firefox */
+  color: rgb(230, 57, 245);
 }
 
+body ::selection {
+  color: rgb(230, 57, 245);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #43ff64d9;
+  border-radius: 15px;
+}
 
 /* Electric Blue: #373e98
 
