@@ -3,8 +3,9 @@ import TokenSales from "@/components/TokenSales";
 import FadeAnimation from "@/components/commons/FadeAnimation";
 import Navbar from "@/components/ui/Navbar";
 import Banner from "@/components/Banner";
+import TrendingHeader from "@/components/TrendingHeader";
 
-const components = [Banner, LaunchpoolProtocol, TokenSales]
+const components = [Banner, LaunchpoolProtocol, TrendingHeader, TokenSales]
 
 export default function Home() {
   return (
