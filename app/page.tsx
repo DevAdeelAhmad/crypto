@@ -6,7 +6,7 @@ import TrendingHeader from "@/components/TrendingHeader";
 import FadeAnimation from "@/components/commons/FadeAnimation";
 import Navbar from "@/components/ui/Navbar";
 
-const components = [LaunchpoolProtocol, TokenSales, GrowingProtocol, Disclaimer]
+const components = [LaunchpoolProtocol, TokenSales, Disclaimer]
 
 export default function Home() {
   return (

@@ -30,14 +30,4 @@ export const suiteToolsData = [
     title: "Management",
     details: "The portal to help you easily update content for your launchpad.",
   },
-  {
-    imageUrl: "/sample.png",
-    title: "Community",
-    details: "Promote your launchpad to thousands of buyers on PinkSale.",
-  },
-  {
-    imageUrl: "/sample.png",
-    title: "Locking",
-    details: "Lock your liquidity to PinkSwap, PancakeSwap after presale.",
-  },
 ];
