@@ -10,7 +10,7 @@ export default function Sidebar() {
           key={index}
           href={data.href}
         >
-          <data.icon size={30} color="#43ff64d9" />
+          <data.icon size={30} color="black" />
         </Link>
       ))}
     </div>

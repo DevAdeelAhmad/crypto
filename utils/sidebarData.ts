@@ -58,12 +58,12 @@ export const sidebarData = [
     href: "/anti-bot",
   },
   {
-    title: "Multi-Sender",
+    title: "MultiSender",
     icon: AiOutlineSend,
     href: "/multi-sender",
   },
   {
-    title: "dex-view.com",
+    title: "dex-view",
     icon: AiOutlineLineChart,
     href: "https://www.dexview.com/",
   },
