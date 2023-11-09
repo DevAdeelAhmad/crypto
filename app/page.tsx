@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full md:w-[92%] absolute top-[10vh] md:left-[8%] flex flex-col items-center justify-center">
+      <main className="w-full left-0 md:left-[50px] absolute top-[10vh] flex flex-col items-center justify-center">
         <TrendingHeader />
         <div className="max-w-7xl px-[5%]">
           {components.map((Component, index) => (
