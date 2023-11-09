@@ -32,6 +32,66 @@ body ::selection {
   z-index: 1000;
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 20vh;
+  overflow: hidden;
+  z-index: 1;
+}
+.marquee {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  font-weight: 800;
+  color: #101010;
+  -webkit-text-stroke: 0.5px #f1f1f1;
+}
+
+.marquee h1 {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee2 h1 {
+  animation-delay: 25s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .marquee h1 {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+  }
+  .marquee2 h1 {
+    animation-delay: 15s;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .marquee h1 {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 40s linear infinite;
+  }
+  .marquee2 h1 {
+    animation-delay: 20s;
+  }
+}
+
 /* Electric Blue: #373e98
 
 Hot Pink: #f16775

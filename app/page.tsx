@@ -2,8 +2,9 @@ import LaunchpoolProtocol from "@/components/LaunchpoolProtocol";
 import TokenSales from "@/components/TokenSales";
 import FadeAnimation from "@/components/commons/FadeAnimation";
 import Navbar from "@/components/ui/Navbar";
+import Banner from "@/components/Banner";
 
-const components = [LaunchpoolProtocol, TokenSales]
+const components = [Banner, LaunchpoolProtocol, TokenSales]
 
 export default function Home() {
   return (
