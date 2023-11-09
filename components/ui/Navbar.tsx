@@ -67,7 +67,7 @@ function Navbar() {
                 )}
             </nav>
 
-            <aside className={`fixed top-[10vh] left-0 h-screen z-[200] bg-white overflow-y-scroll md:w-min shadow-xl`}>
+            <aside className={`fixed top-[10vh] left-0 z-[200] bg-white overflow-y-auto md:w-min shadow-xl`}>
                 {isSideBarActive ? <SidebarFull /> : <Sidebar />}
             </aside>
         </>
