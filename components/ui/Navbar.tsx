@@ -20,7 +20,7 @@ function Navbar() {
     }
     return (
         <>
-            <header className="fixed top-0 flex w-screen justify-between items-center p-4 z-[200] !h-[10vh] bg-[#000000]" style={{ backdropFilter: "10px" }}>
+            <header className="fixed top-0 flex w-full justify-between items-center p-4 z-[200] !h-[10vh] bg-[#000000]" style={{ backdropFilter: "10px" }}>
                 <div className="flex gap-x-2 items-center">
                     <button onClick={handleSideIconToggle}>
                         {isSideBarActive ? <AiOutlineMenuFold size={25} color="#43ff64d9" /> : <AiOutlineMenu size={25} color="#43ff64d9" />}
