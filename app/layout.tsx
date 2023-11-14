@@ -7,7 +7,7 @@ import ScrollToTop from '@/components/commons/ScrollToTop'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CryptoSale- The Launchpad Platform for Everyone!',
+  title: 'CryptoSale - The Launchpad Platform for Everyone!',
   description: 'CryptoSale is a simple launchpad platform for crypto coins',
 }
 

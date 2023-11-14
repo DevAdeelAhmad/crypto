@@ -1,7 +1,8 @@
 import React from 'react'
 import { suiteToolsData } from '@/utils/suiteToolsData'
 import Card from './commons/Card'
-import Dropdown from './Dropdown'
+import Dropdown from '@/components/Dropdown'
+import Airdrop from '@/components/Airdrop'
 
 function TokenSales() {
     return (
@@ -13,7 +14,10 @@ function TokenSales() {
                     ))
                 }
             </div>
-            <Dropdown />
+            <div className='flex flex-row md:flex-col'>
+                <Dropdown />
+                <Airdrop />
+            </div>
         </section>
     )
 }

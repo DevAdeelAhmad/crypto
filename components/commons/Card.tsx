@@ -10,7 +10,7 @@ interface Props {
 function Card({ imageUrl, title, details }: Props) {
     return (
         <div className='flex flex-col gap-y-3 items-center justify-around text-center py-2 px-2
-        bg-[#e5e5e5] rounded-xl text-black/80 md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px]'>
+        bg-white rounded-xl text-black/80 md:w-[200px] md:h-[250px] lg:w-[250px] lg:h-[320px]'>
             <Image src={imageUrl} width={80} height={80} alt={title + "Image"} />
             <h1 className='text-lg lg:text-2xl font-semibold'>{title}</h1>
             <p className='text-sm lg:text-base font-medium'>{details}</p>
@@ -19,3 +19,4 @@ function Card({ imageUrl, title, details }: Props) {
 }
 
 export default Card
+
