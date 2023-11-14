@@ -6,15 +6,23 @@ import { GiChart } from 'react-icons/gi'
 import { FaEthereum } from 'react-icons/fa'
 import { BiMenuAltRight } from 'react-icons/bi'
 import Sidebar from "@/components/ui/Sidebar";
+import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
     const [isActive, setIsActive] = useState(false);
+    const [isSidebarActive, setIsSidebarActive] = useState(false);
     function handleLinkToggle() {
         setIsActive(!isActive);
     }
+    function handleSideBarToggle() {
+        setIsSidebarActive(!isActive);
+    }
     return (
         <>
-            <nav className="fixed top-0 bg-white right-0 w-full p-4 md:p-7 z-[200] flex items-center justify-end">
+            <nav className="fixed top-0 bg-white right-0 w-full p-4 md:p-7 z-[200] shadow-sm flex items-center justify-between sm:justify-end">
+                <Link onClick={handleSideBarToggle} href='#' className="flex sm:hidden">
+                    <IoMenu size="30" />
+                </Link>
                 <div className="hidden sm:flex gap-x-2 items-center">
                     <Link target="_blank" className="rounded-xl px-3 py-3 flex border border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href='https://www.tradingview.com/'>
                         <GiChart size={25} color="#24c077" />
@@ -52,7 +60,7 @@ function Navbar() {
                 )}
             </nav>
 
-            <aside className="fixed h-screen top-0 left-0 z-[201] flex flex-col w-min border-r-[1px] border-l-gray-300 bg-white items-center justify-center">
+            <aside className="hidden sm:fixed overflow-y-auto h-screen top-0 left-0 z-[201] sm:flex flex-col w-min border-r-[1px] border-l-gray-300 bg-white items-center justify-center">
                 <Link href='/' className="flex gap-x-2 items-center">
                     <span className="font-bold text-base md:text-lg text-black">Logo</span>
                 </Link>
