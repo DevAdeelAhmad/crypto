@@ -38,15 +38,15 @@ const Airdrop = () => {
 
     return (
         <div className='flex flex-col gap-5 py-10 bg-white px-10 justify-center items-center rounded-lg'>
-            <h1 className='text-xl lg:text-2xl font-semibold'>BNB Airdrop</h1>
+            <h1 className='text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>BNB Airdrop</h1>
             {walletData !== null && bnbPrice !== null ? (
                 <div className='flex flex-col gap-5'>
                     <div className="border-2 py-3 px-6 rounded-lg">
                         <span className='text-base lg:text-lg font-semibold'>${balanceInUSD}</span>
                     </div>
-                    <span className='text-xl lg:text-2xl font-semibold'>BNB: {walletData / 1e18}BNB</span>
-                    <span className='text-base lg:text-lg font-semibold'>Max Supply: 100 Billion</span>
-                    <span className='text-base lg:text-lg font-semibold'>Market Cap at Launch: $1000</span>
+                    <span className='text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>BNB: {walletData / 1e18}BNB</span>
+                    <span className='text-base lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Max Supply: 100 Billion</span>
+                    <span className='text-base lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Market Cap at Launch: $1000</span>
                 </div>
             ) : (
                 <p>Loading...</p>
