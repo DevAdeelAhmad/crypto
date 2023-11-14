@@ -4,21 +4,21 @@
 
 body ::-moz-selection {
   /* For Firefox */
-  color: rgb(230, 57, 245);
+  color: #ffa402;
 }
 
 body ::selection {
-  color: rgb(230, 57, 245);
+  color: #ffa402;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #43ff64d9;
+  background: #ffa402;
   border-radius: 15px;
 }
 
@@ -47,9 +47,7 @@ body ::selection {
   overflow: hidden;
   position: absolute;
   right: 0;
-  font-weight: 800;
-  color: #101010;
-  -webkit-text-stroke: 0.5px #f1f1f1;
+  font-weight: 700;
 }
 
 .marquee h1 {

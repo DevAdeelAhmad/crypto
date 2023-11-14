@@ -8,7 +8,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`flex flex-col z-[201] w-[${isSideBarActive ? 10 : 5}vw] justify-between gap-y-5 p-3 lg:p-5 xl:p-7 overflow-hidden`}
+      className={`flex flex-col z-[201] w-[${isSideBarActive ? 10 : 5}vw] h-full justify-between gap-y-5 p-3 lg:p-5 xl:p-7 overflow-hidden`}
       onMouseEnter={() => setIsSideBarActive(true)}
       onMouseLeave={() => setIsSideBarActive(false)}
     >
@@ -21,8 +21,8 @@ export default function Sidebar() {
           <Image
             className="!min-w-[25px] !min-h-[25px]"
             src={data.iconUrl}
-            width={30}
-            height={30}
+            width={25}
+            height={25}
             alt={data.title}
           />
           {isSideBarActive && (
