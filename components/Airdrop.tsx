@@ -41,8 +41,10 @@ const Airdrop = () => {
             <h1 className='text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>BNB Airdrop</h1>
             {walletData !== null && bnbPrice !== null ? (
                 <div className='flex flex-col gap-5'>
-                    <div className="border-2 py-3 px-6 rounded-lg">
-                        <span className='text-base lg:text-lg font-semibold'>${balanceInUSD}</span>
+                    <div className="rounded-xl p-[1px] shadow-md flex bg-gradient-to-r from-primary to-secondary text-base text-center items-center font-bold">
+                        <div className="flex gap-x-2 items-center w-full justify-center bg-white p-3 rounded-xl">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-lg">${balanceInUSD}</span>
+                        </div>
                     </div>
                     <span className='text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>BNB: {walletData / 1e18}BNB</span>
                     <span className='text-base lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Max Supply: 100 Billion</span>
@@ -50,8 +52,9 @@ const Airdrop = () => {
                 </div>
             ) : (
                 <p>Loading...</p>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 
