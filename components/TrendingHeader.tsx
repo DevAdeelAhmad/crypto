@@ -3,7 +3,7 @@ import { BsChevronDoubleUp } from 'react-icons/bs'
 import Image from "next/image"
 export default function TrendingHeader() {
     return (
-        <div className='flex items-center justify-center text-center flex-wrap w-full m-4 p-6  bg-white rounded-lg gap-x-4 text-black font-semibold uppercase text-lg lg:text-xl'>
+        <div className='flex items-center justify-center text-center flex-wrap w-full m-4 p-6  bg-white rounded-lg gap-x-10 text-black font-semibold uppercase text-lg lg:text-xl'>
             {trendingData.map((data, index) => (
                 <div className="flex gap-x-1 items-center justify-center" key={index}>
                     <span>{data.rank}</span>&nbsp;
