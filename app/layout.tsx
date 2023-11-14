@@ -20,6 +20,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en" >
       <body className={montserrat.className}>
         <ScrollToTop />
+        <Navbar />
         {children}
       </body>
     </ html>

@@ -1,45 +1,30 @@
 "use client"
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react"
-import { AiOutlineMenuFold, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineClose } from 'react-icons/ai'
 import { GiChart } from 'react-icons/gi'
 import { FaEthereum } from 'react-icons/fa'
 import { BiMenuAltRight } from 'react-icons/bi'
 import Sidebar from "@/components/ui/Sidebar";
-import SidebarFull from "@/components/ui/SidebarFull";
 
 function Navbar() {
-    const [isSideBarActive, setIsSideBarActive] = useState(false);
     const [isActive, setIsActive] = useState(false);
-    function handleSideIconToggle() {
-        setIsSideBarActive(!isSideBarActive);
-    }
     function handleLinkToggle() {
         setIsActive(!isActive);
     }
     return (
         <>
-            <nav className="fixed top-0 flex w-full justify-between items-center p-4 z-[200] !h-[10vh] bg-white border-b-[1px] border-b-[#24c077] shadow-lg shadow-[#24c077]">
-                <div className="flex gap-x-2 items-center">
-                    <button onClick={handleSideIconToggle}>
-                        {isSideBarActive ? <AiOutlineMenuFold size={25} color="#24c077" /> : <AiOutlineMenu size={25} color="black" />}
-                    </button>
-                    <Link href='/' className="flex gap-x-2 items-center">
-                        <Image className="border-2 border-black rounded-full" src='/logo.png' alt="logo" width={45} height={45} />
-                        <span className="font-semibold text-black">CryptoSale</span>
-                    </Link>
-                </div>
+            <nav className="fixed top-0 bg-white right-0 w-full p-4 md:p-7 z-[200] flex items-center justify-end">
                 <div className="hidden sm:flex gap-x-2 items-center">
-                    <Link target="_blank" className="rounded-full px-3 py-2 flex border shadow-lg border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href='https://www.tradingview.com/'>
+                    <Link target="_blank" className="rounded-xl px-3 py-3 flex border border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href='https://www.tradingview.com/'>
                         <GiChart size={25} color="#24c077" />
                         TradingView
                     </Link>
-                    <Link target="_blank" className="rounded-full px-3 py-2 flex border shadow-lg border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href=''>
+                    <Link target="_blank" className="rounded-xl px-3 py-3 flex border border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href=''>
                         <FaEthereum size={25} color="#24c077" />
                         Network
                     </Link>
-                    <Link className="rounded-full px-3 py-2 text-white border shadow-lg bg-[#24c077] border-gray-500 gap-x-2 text-base text-center font-semibold" href='/connect'>
+                    <Link className="rounded-full px-10 py-3 text-white border shadow-lg bg-[#24c077] border-gray-500 gap-x-2 text-base text-center font-semibold" href='/connect'>
                         Connect
                     </Link>
                 </div>
@@ -52,24 +37,27 @@ function Navbar() {
 
                 {isActive && (
                     <div className="absolute top-[10vh] right-0 w-screen items-end justify-center flex flex-col gap-y-5 px-5 py-5 bg-black sm:hidden">
-                        <Link target="_blank" className="rounded-full px-3 py-2 text-white flex border border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href='https://www.tradingview.com/'>
-                            <GiChart size={25} color="#43ff64d9" />
+                        <Link target="_blank" className="rounded-xl px-3 py-3 flex border text-white border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href='https://www.tradingview.com/'>
+                            <GiChart size={25} color="#24c077" />
                             TradingView
                         </Link>
-                        <Link target="_blank" className="rounded-full px-3 py-2 text-white flex border border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href=''>
-                            <FaEthereum size={25} color="#43ff64d9" />
+                        <Link target="_blank" className="rounded-xl px-3 py-3 flex border text-white border-gray-500 gap-x-2 text-sm text-center items-center font-semibold" href=''>
+                            <FaEthereum size={25} color="#24c077" />
                             Network
                         </Link>
-                        <Link className="rounded-full px-3 py-2 text-white border bg-[#24c077] border-gray-500 gap-x-2 text-base text-center font-semibold" href='/connect'>
+                        <Link className="rounded-full px-10 py-3 border text-white shadow-lg bg-[#24c077] border-gray-500 gap-x-2 text-base text-center font-semibold" href='/connect'>
                             Connect
                         </Link>
                     </div>
                 )}
             </nav>
 
-            <aside className={`fixed top-[10vh] left-0 z-[200] bg-white overflow-y-auto md:w-min shadow-xl`}>
-                {isSideBarActive ? <SidebarFull /> : <Sidebar />}
-            </aside>
+            <aside className="fixed h-screen top-0 left-0 z-[201] flex flex-col w-min border-r-[1px] border-l-gray-300 bg-white items-center justify-center">
+                <Link href='/' className="flex gap-x-2 items-center">
+                    <span className="font-bold text-base md:text-lg text-black">Logo</span>
+                </Link>
+                <Sidebar />
+            </aside >
         </>
     )
 }
