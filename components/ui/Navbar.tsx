@@ -19,7 +19,7 @@ function Navbar() {
     }
     return (
         <>
-            <nav className="fixed top-0 bg-white right-0 w-full p-4 md:p-7 z-[200] shadow-sm flex items-center justify-between sm:justify-end">
+            <nav className="fixed top-0 bg-white right-0 w-full p-4 md:p-7 z-[200] flex items-center justify-between sm:justify-end">
                 <Link onClick={handleSideBarToggle} href='#' className="flex sm:hidden">
                     <IoMenu size="30" />
                 </Link>

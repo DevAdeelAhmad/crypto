@@ -8,7 +8,7 @@ const components = [Banner, LaunchpoolProtocol, TrendingHeader, TokenSales]
 export default function Home() {
   return (
     <>
-      <main className="absolute w-full right-0 top-[10vh] flex flex-col items-center bg-slate-500 justify-center">
+      <main className="absolute w-full right-0 top-[10vh] flex flex-col items-center bg-slate-100/60 justify-center">
         <div className="max-w-[110rem] px-[5%]">
           {components.map((Component, index) => (
             <FadeAnimation key={index}>
@@ -20,5 +20,3 @@ export default function Home() {
     </>
   )
 }
-
-// bg-slate-100/50
