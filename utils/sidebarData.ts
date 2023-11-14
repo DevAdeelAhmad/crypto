@@ -1,100 +1,98 @@
-import {
-  AiOutlineHome,
-  AiFillUnlock,
-  AiOutlineDollarCircle,
-  AiOutlineCrown,
-  AiOutlineSafetyCertificate,
-  AiOutlineSend,
-  AiOutlineLineChart,
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import { RiGitRepositoryPrivateLine, RiTwitterXFill } from "react-icons/ri";
-import { BiPackage } from "react-icons/bi";
-import { LiaDiscord } from "react-icons/lia";
-import { SiGoogledocs } from "react-icons/si";
-
+import dashboard from "@/public/lightSideIcons/dashboard.png";
+import launch from "@/public/lightSideIcons/launch.png";
+import privateSale from "@/public/lightSideIcons/private.png";
+import lock from "@/public/lightSideIcons/lock.png";
+import airdrop from "@/public/lightSideIcons/airdrop.png";
+import buy from "@/public/lightSideIcons/buy.png";
+import leaderboard from "@/public/lightSideIcons/leaderboard.png";
+import antibot from "@/public/lightSideIcons/antibot.png";
+import multiSender from "@/public/lightSideIcons/multiSender.png";
+import dex from "@/public/lightSideIcons/dex.png";
+import cart from "@/public/lightSideIcons/cart.png";
+import docs from "@/public/lightSideIcons/docs.png";
+import fb from "@/public/lightSideIcons/fb.png";
+import ig from "@/public/lightSideIcons/ig.png";
+import x from "@/public/lightSideIcons/x.png";
+import discord from "@/public/lightSideIcons/discord.png";
 export const sidebarData = [
   {
     title: "Home",
-    icon: AiOutlineHome,
+    iconUrl: dashboard,
     href: "/",
   },
   {
     title: "Launchpads",
-    icon: HiOutlineRocketLaunch,
+    iconUrl: launch,
     href: "/launchpad",
   },
   {
     title: "Private Sale",
-    icon: RiGitRepositoryPrivateLine,
+    iconUrl: privateSale,
     href: "/private-sale",
   },
   {
-    title: "PinkLock",
-    icon: AiFillUnlock,
+    title: "CryptoLock",
+    iconUrl: lock,
     href: "/pink-lock",
   },
   {
     title: "AirDrop",
-    icon: BiPackage,
+    iconUrl: airdrop,
     href: "/air-drop",
   },
   {
     title: "Buy Crypto",
-    icon: AiOutlineDollarCircle,
+    iconUrl: buy,
     href: "/buy",
   },
   {
     title: "Leaderboard",
-    icon: AiOutlineCrown,
+    iconUrl: leaderboard,
     href: "/leaderboard",
   },
   {
     title: "Anti-Bot",
-    icon: AiOutlineSafetyCertificate,
+    iconUrl: antibot,
     href: "/anti-bot",
   },
   {
     title: "MultiSender",
-    icon: AiOutlineSend,
+    iconUrl: multiSender,
     href: "/multi-sender",
   },
   {
     title: "dex-view",
-    icon: AiOutlineLineChart,
+    iconUrl: dex,
     href: "https://www.dexview.com/",
   },
   {
     title: "Shop",
-    icon: AiOutlineShoppingCart,
+    iconUrl: cart,
     href: "/shop",
   },
   {
     title: "Docs",
-    icon: SiGoogledocs,
+    iconUrl: docs,
     href: "/docs",
   },
   {
     title: "Facebook",
-    icon: AiOutlineFacebook,
+    iconUrl: fb,
     href: "https://www.facebook.com/",
   },
   {
     title: "Instagram",
-    icon: AiOutlineInstagram,
+    iconUrl: ig,
     href: "https://www.instagram.com/",
   },
   {
     title: "X/Twitter",
-    icon: RiTwitterXFill,
+    iconUrl: x,
     href: "https://www.x.com/",
   },
   {
     title: "Discord",
-    icon: LiaDiscord,
+    iconUrl: discord,
     href: "https://www.discord.com/",
   },
 ];

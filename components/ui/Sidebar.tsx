@@ -1,4 +1,5 @@
 import { sidebarData } from "@/utils/sidebarData";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -7,14 +8,26 @@ export default function Sidebar() {
 
   return (
     <div
-      className="flex flex-col z-[201] !w-min justify-between gap-y-5 py-7 px-7"
+      className={`flex flex-col z-[201] w-[${isSideBarActive ? 10 : 5}vw] justify-between gap-y-5 p-3 lg:p-5 xl:p-7 overflow-hidden`}
       onMouseEnter={() => setIsSideBarActive(true)}
       onMouseLeave={() => setIsSideBarActive(false)}
     >
       {sidebarData.map((data, index) => (
-        <Link className="flex items-center gap-x-2 text-sm lg:text-md" key={index} href={data.href}>
-          <data.icon size={30} color="black" />
-          {isSideBarActive && <span className="text-black font-bold">{data.title}</span>}
+        <Link
+          className="flex items-center gap-x-3 text-sm lg:text-md"
+          key={index}
+          href={data.href}
+        >
+          <Image
+            className="!min-w-[25px] !min-h-[25px]"
+            src={data.iconUrl}
+            width={30}
+            height={30}
+            alt={data.title}
+          />
+          {isSideBarActive && (
+            <span className="text-black font-bold">{data.title}</span>
+          )}
         </Link>
       ))}
     </div>

@@ -62,7 +62,7 @@ function Navbar() {
 
             <aside className="hidden sm:fixed overflow-y-auto h-screen top-0 left-0 z-[201] sm:flex flex-col w-min border-r-[1px] border-l-gray-300 bg-white items-center justify-center">
                 <Link href='/' className="flex gap-x-2 items-center">
-                    <span className="font-bold text-base md:text-lg text-black">Logo</span>
+                    <span className="font-bold text-base md:text-lg text-black">Crypto</span>
                 </Link>
                 <Sidebar />
             </aside >
