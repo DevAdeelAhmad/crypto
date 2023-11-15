@@ -8,7 +8,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`flex flex-col z-[201] w-[${isSideBarActive ? 10 : 5}vw] h-full justify-between gap-y-5 p-3 lg:p-5 xl:p-7 overflow-hidden`}
+      className={`flex flex-col z-[201] w-[${isSideBarActive ? 10 : 5}vw] h-full justify-between gap-y-5 p-3 lg:p-5 xl:p-7 overflow-y-auto`}
       onMouseEnter={() => setIsSideBarActive(true)}
       onMouseLeave={() => setIsSideBarActive(false)}
     >

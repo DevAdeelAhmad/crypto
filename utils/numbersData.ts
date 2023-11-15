@@ -1,7 +1,7 @@
 export const numbersData = [
   {
     number: "$909M",
-    title: "Total Liquidity Raised",
+    title: "Total Liquidity",
   },
   {
     number: "20%",

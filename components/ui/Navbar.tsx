@@ -19,24 +19,24 @@ function Navbar() {
     }
     return (
         <>
-            <nav className="fixed top-0 bg-white right-0 w-full p-4 md:p-7 z-[200] flex items-center justify-between sm:justify-end">
+            <nav className="fixed top-0  bg-white right-0 w-full p-4 2xl:p-7 z-[200] flex items-center justify-between sm:justify-end">
                 <Link onClick={handleSideBarToggle} href='#' className="flex sm:hidden">
                     <IoMenu size="30" color="#ffa402" />
                 </Link>
                 <div className="hidden sm:flex gap-x-2 items-center">
                     <Link target="_blank" className="rounded-xl p-[1px] shadow-md flex bg-gradient-to-r from-primary to-secondary text-base text-center items-center font-bold" href='https://www.tradingview.com/'>
-                        <div className="flex gap-x-2 items-center bg-white p-3 rounded-xl">
+                        <div className="flex gap-x-2 items-center bg-white p-2 2xl:p-3 rounded-xl">
                             <GiChart size={25} color="#ffa402" />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">TradingView</span>
                         </div>
                     </Link>
                     <Link target="_blank" className="rounded-xl p-[1px] shadow-md flex bg-gradient-to-r from-primary to-secondary text-base text-center items-center font-bold" href='https://www.tradingview.com/'>
-                        <div className="flex gap-x-2 items-center bg-white p-3 rounded-xl">
+                        <div className="flex gap-x-2 items-center bg-white p-2 2xl:p-3 rounded-xl">
                             <FaEthereum size={25} color="#ffa402" />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Network</span>
                         </div>
                     </Link>
-                    <Link className="rounded-full px-10 py-3 text-white shadow-lg bg-gradient-to-r from-primary to-secondary border-gray-500 gap-x-2 text-base text-center font-semibold" href='/connect'>
+                    <Link className="rounded-full px-7 py-2 2xl:px-10 2xl:py-3 text-white shadow-lg bg-gradient-to-r from-primary to-secondary border-gray-500 gap-x-2 text-base text-center font-semibold" href='/connect'>
                         Connect
                     </Link>
                 </div>

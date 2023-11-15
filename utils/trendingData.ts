@@ -21,7 +21,7 @@ export const trendingData = [
   },
   {
     rank: "#5",
-    name: "DOGEUSDT",
+    name: "BNBUSDTPERP",
     imageUrl: "/trending/axs.svg",
   },
 ];

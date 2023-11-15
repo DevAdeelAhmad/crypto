@@ -4,7 +4,7 @@ import { FaBtc } from 'react-icons/fa'
 
 function Dropdown() {
     return (
-        <section className='flex flex-col gap-y-3 p-5 sm:p-10 bg-white rounded-lg'>
+        <section className='flex flex-col gap-y-3 2xl:p-5 p-10 md:p-3 bg-white rounded-lg text-sm 2xl:text-base'>
             <DropdownItem>24h % change</DropdownItem>
             <div className="flex gap-x-3">
                 <DropdownItem>All</DropdownItem>
@@ -15,8 +15,6 @@ function Dropdown() {
                 <SingleTradingPair title='ETHUSDTPERP' change='30.1%' price='37112.54' />
                 <SingleTradingPair title='XRPUSDTPERP' change='30.1%' price='37112.54' />
                 <SingleTradingPair title='FILUSDTPERP' change='30.1%' price='37112.54' />
-                <SingleTradingPair title='AXSUSDTPERP' change='30.1%' price='37112.54' />
-                <SingleTradingPair title='BNBUSDTPERP' change='30.1%' price='37112.54' />
             </div>
         </section>
     )
@@ -35,7 +33,7 @@ function DropdownItem({ children }: { children: ReactNode }) {
 
 function SingleTradingPair({ title, change, price }: { title: string, change: string, price: string }) {
     return (
-        <div className='flex items-center justify-between gap-x-4 py-2 px-2 bg-white rounded-lg'>
+        <div className='flex flex-col sm:flex-row items-center justify-between gap-4 py-2 px-2 bg-white rounded-lg'>
             <div className='flex gap-x-2'>
                 <FaBtc size={20} />
                 <span>{title}</span>
