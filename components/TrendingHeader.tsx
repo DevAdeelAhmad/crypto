@@ -1,13 +1,31 @@
-import React from 'react';
-
+import Image from "next/image";
+import { BsChevronDoubleUp } from "react-icons/bs";
 const TrendingHeader = () => {
     return (
         <div suppressHydrationWarning className="banner">
             <p className="marquee uppercase">
-                <h1 className="text-base 2xl:text-lg text-black font-semibold inline-block">#1 BTCUSDT/PERP&emsp;#2 ETHUSDT/PERP&emsp;#3 BXRPUSDT/PERP&emsp;#4 AXSUSDT/PERP&emsp;#5 FILUSDT/PERP&emsp;#6 BGBUSDT/PERP&emsp;#7 BNBUSDT/PERP&emsp;#8 FILUSDT/PERP&emsp;#9 YFIUSDT/PERP&emsp;#10 FTMSDT/PERP&emsp;&nbsp;</h1>
+                <h1 className="text-base 2xl:text-lg text-black font-semibold inline-block">&emsp;&emsp;
+                    #1 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/btc.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BTCUSDT&emsp;
+                    #2 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/eth.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;ETHUSDT&emsp;
+                    #3 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/axs.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BXRPUSDT&emsp;
+                    #4 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/doge.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;AXSUSDT&emsp;
+                    #5 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/btc.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;FILUSDT&emsp;
+                    #6 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/eth.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BGBUSDT&emsp;
+                    #7 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/axs.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BNBUSDT&emsp;
+                    &emsp;&emsp;
+                </h1>
             </p>
             <p className="marquee marquee2 uppercase">
-                <h1 className="text-base 2xl:text-lg text-black font-semibold inline-block">#1 BTCUSDT/PERP&emsp;#2 ETHUSDT/PERP&emsp;#3 BXRPUSDT/PERP&emsp;#4 AXSUSDT/PERP&emsp;#5 FILUSDT/PERP&emsp;#6 BGBUSDT/PERP&emsp;#7 BNBUSDT/PERP&emsp;#8 FILUSDT/PERP&emsp;#9 YFIUSDT/PERP&emsp;#10 FTMSDT/PERP&emsp;&nbsp;</h1>
+                <h1 className="text-base 2xl:text-lg text-black font-semibold inline-block">&emsp;&emsp;
+                    #1 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/btc.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BTCUSDT&emsp;
+                    #2 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/eth.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;ETHUSDT&emsp;
+                    #3 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/axs.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BXRPUSDT&emsp;
+                    #4 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/doge.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;AXSUSDT&emsp;
+                    #5 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/btc.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;FILUSDT&emsp;
+                    #6 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/eth.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BGBUSDT&emsp;
+                    #7 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/axs.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BNBUSDT&emsp;
+                    &emsp;&emsp;
+                </h1>
             </p>
         </div >
     );
