@@ -37,7 +37,7 @@ const Airdrop = () => {
     const balanceInUSD = walletData !== null && bnbPrice !== null ? (walletData / 1e18) * bnbPrice : null;
 
     return (
-        <div className='flex flex-col gap-5 py-10 bg-white dark:bg-darkBg px-10 justify-center items-center rounded-lg'>
+        <div className='hover:shadow-lg dark:hover:shadow-md dark:hover:shadow-white flex flex-col gap-5 py-10 bg-white dark:bg-darkBg px-10 justify-center items-center rounded-lg'>
             <h1 className='text-lg 2xl:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS'>BNB Airdrop</h1>
             {walletData !== null && bnbPrice !== null ? (
                 <div className='flex flex-col gap-5'>
