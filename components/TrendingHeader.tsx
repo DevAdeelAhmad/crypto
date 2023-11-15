@@ -4,7 +4,7 @@ const TrendingHeader = () => {
     return (
         <div suppressHydrationWarning className="banner">
             <p className="marquee uppercase">
-                <h1 className="text-base 2xl:text-lg text-black font-semibold inline-block">&emsp;&emsp;
+                <h1 className="text-base 2xl:text-lg text-black  dark:text-white font-semibold inline-block">&emsp;&emsp;
                     #1 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/btc.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BTCUSDT&emsp;
                     #2 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/eth.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;ETHUSDT&emsp;
                     #3 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/axs.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BXRPUSDT&emsp;
@@ -16,7 +16,7 @@ const TrendingHeader = () => {
                 </h1>
             </p>
             <p className="marquee marquee2 uppercase">
-                <h1 className="text-base 2xl:text-lg text-black font-semibold inline-block">&emsp;&emsp;
+                <h1 className="text-base 2xl:text-lg text-black dark:text-white font-semibold inline-block">&emsp;&emsp;
                     #1 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/btc.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BTCUSDT&emsp;
                     #2 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/eth.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;ETHUSDT&emsp;
                     #3 &nbsp;<BsChevronDoubleUp size="20" className="inline-block" />&nbsp;<Image className="inline-block" src='/trending/axs.svg' width={20} height={20} alt="TrendingPair Img" />&nbsp;BXRPUSDT&emsp;

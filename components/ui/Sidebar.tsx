@@ -14,7 +14,7 @@ export default function Sidebar() {
     >
       {sidebarData.map((data, index) => (
         <Link
-          className="flex items-center gap-x-3 text-sm lg:text-md"
+          className="flex items-center gap-x-3 text-sm lg:text-md dark:text-white"
           key={index}
           href={data.href}
         >
@@ -26,7 +26,7 @@ export default function Sidebar() {
             alt={data.title}
           />
           {isSideBarActive && (
-            <span className="text-black font-bold">{data.title}</span>
+            <span className="text-black dark:text-white font-bold">{data.title}</span>
           )}
         </Link>
       ))}

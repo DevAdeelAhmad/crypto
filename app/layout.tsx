@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/ui/Navbar'
 import { Montserrat } from 'next/font/google'
 import ScrollToTop from '@/components/commons/ScrollToTop'
+import { ThemeProvider } from "@/components/providers/ThemeProvider"
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -21,7 +22,12 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <ScrollToTop />
         <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </ html>
   )

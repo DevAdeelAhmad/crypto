@@ -37,18 +37,18 @@ const Airdrop = () => {
     const balanceInUSD = walletData !== null && bnbPrice !== null ? (walletData / 1e18) * bnbPrice : null;
 
     return (
-        <div className='flex flex-col gap-5 py-10 bg-white px-10 justify-center items-center rounded-lg'>
-            <h1 className='text-lg 2xl:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>BNB Airdrop</h1>
+        <div className='flex flex-col gap-5 py-10 bg-white dark:bg-darkBg px-10 justify-center items-center rounded-lg'>
+            <h1 className='text-lg 2xl:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS'>BNB Airdrop</h1>
             {walletData !== null && bnbPrice !== null ? (
                 <div className='flex flex-col gap-5'>
-                    <div className="rounded-xl p-[1px] shadow-md flex bg-gradient-to-r from-primary to-secondary text-base text-center items-center font-bold">
-                        <div className="flex gap-x-2 items-center w-full justify-center bg-white p-3 rounded-xl">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-base 2xl:text-lg">${balanceInUSD}</span>
+                    <div className="rounded-xl p-[1px] shadow-md flex bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS text-base text-center items-center font-bold">
+                        <div className="flex gap-x-2 items-center w-full justify-center bg-white dark:bg-darkBg p-3 rounded-xl">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS text-base 2xl:text-lg">${balanceInUSD}</span>
                         </div>
                     </div>
-                    <span className='text-base 2xl:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>BNB: {walletData / 1e18}BNB</span>
-                    <span className='text-sm lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Max Supply: 100 Billion</span>
-                    <span className='text-sm lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Market Cap at Launch: $1000</span>
+                    <span className='text-base 2xl:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS'>BNB: {walletData / 1e18}BNB</span>
+                    <span className='text-sm lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS'>Max Supply: 100 Billion</span>
+                    <span className='text-sm lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-darkP dark:to-darkS'>Market Cap at Launch: $1000</span>
                 </div>
             ) : (
                 <p>Loading...</p>
