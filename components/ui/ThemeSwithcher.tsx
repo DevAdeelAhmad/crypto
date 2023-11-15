@@ -6,7 +6,14 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
 const ThemeSwitcher = () => {
-    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false)
+    const { theme, setTheme } = useTheme()
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if (!mounted) return null
 
     return (
         <Tabs defaultValue={theme}>

@@ -4,7 +4,7 @@ import { FaBtc } from 'react-icons/fa'
 
 function Dropdown() {
     return (
-        <section className='flex flex-col gap-y-3 2xl:p-5 p-10 md:p-3 bg-white dark:bg-darkBg rounded-lg text-sm 2xl:text-base'>
+        <section className='flex flex-col gap-y-3 2xl:p-5 p-10 md:p-3 bg-white dark:bg-darkBg rounded-lg text-sm 2xl:text-base text-black dark:text-white'>
             <DropdownItem>24h % change</DropdownItem>
             <div className="flex gap-x-3">
                 <DropdownItem>All</DropdownItem>
