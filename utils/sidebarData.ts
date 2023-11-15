@@ -1,5 +1,5 @@
 import dashboard from "@/public/lightSideIcons/dashboard.png";
-import launch from "@/public/lightSideIcons/launch.png";
+import launch from "@/public/lightSideIcons/launch.svg";
 import privateSale from "@/public/lightSideIcons/private.png";
 import lock from "@/public/lightSideIcons/lock.png";
 import airdrop from "@/public/lightSideIcons/airdrop.png";
